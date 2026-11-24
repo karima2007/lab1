@@ -1,0 +1,21 @@
+package ru.mirea.lab4.Task2;
+
+public class Pants extends Clothes implements MenClothing, WomenClothing {
+    public Pants(Size size, double cost, String color) {
+        super(size, cost, color);
+    }
+
+    @Override
+    public void dressMan() {
+        System.out.println("Мужские штаны. Размер: " + size +
+                ", Евро: " + size.getEuroSize() +
+                ", Цвет: " + color + ", Цена: " + cost);
+    }
+
+    @Override
+    public void dressWomen() {
+        System.out.println("Женские штаны. Размер: " + size +
+                ", Евро: " + size.getEuroSize() +
+                ", Цвет: " + color + ", Цена: " + cost);
+    }
+}
